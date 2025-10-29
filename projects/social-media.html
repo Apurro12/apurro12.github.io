@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #e67e22;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #f39c12;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/f39c12/ffffff?text=Social+Media+Platform" alt="Social Media App" class="project-hero-image">
+                <h1>Social Media App</h1>
+                <p class="subtitle">Modern social platform with real-time messaging</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">Cloud Storage</span>
+                    <span class="tech-tag">Push Notifications</span>
+                    <span class="tech-tag">Real-time DB</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A full-featured social media platform built with React Native, designed to provide users with a comprehensive social networking experience. The application includes user profiles, content sharing, real-time messaging, and social interactions, all optimized for mobile devices.</p>
+
+                <p>The platform emphasizes user engagement through modern UI design, seamless real-time interactions, and robust content management features, providing a competitive alternative to mainstream social media platforms.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>User Profiles</h3>
+                        <p>Customizable profiles with bio, photos, and activity tracking.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Content Sharing</h3>
+                        <p>Post photos, videos, and text with hashtags and mentions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Real-time Messaging</h3>
+                        <p>Instant messaging with typing indicators and read receipts.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Social Interactions</h3>
+                        <p>Like, comment, share functionality with engagement tracking.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>News Feed</h3>
+                        <p>Algorithmic feed with personalized content recommendations.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Push Notifications</h3>
+                        <p>Real-time notifications for messages, likes, and comments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Home+Feed" alt="Home Feed" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Profile+View" alt="Profile View" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Messaging" alt="Messaging" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Camera+View" alt="Camera View" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Mobile Development</h3>
+                <ul>
+                    <li><strong>React Native</strong> - Cross-platform mobile development</li>
+                    <li><strong>Expo</strong> - Development platform and build tools</li>
+                    <li><strong>React Navigation</strong> - Navigation between screens</li>
+                    <li><strong>React Native Elements</strong> - UI component library</li>
+                </ul>
+
+                <h3>Backend & Database</h3>
+                <ul>
+                    <li><strong>Firebase Authentication</strong> - User authentication and security</li>
+                    <li><strong>Firestore</strong> - NoSQL database for real-time data</li>
+                    <li><strong>Firebase Storage</strong> - Image and video file storage</li>
+                    <li><strong>Cloud Functions</strong> - Serverless backend logic</li>
+                </ul>
+
+                <h3>State Management</h3>
+                <ul>
+                    <li><strong>Redux Toolkit</strong> - Predictable state management</li>
+                    <li><strong>Redux Persist</strong> - State persistence across app sessions</li>
+                    <li><strong>React Redux</strong> - React bindings for Redux</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Implementing real-time features without overwhelming the user interface or draining battery.</p>
+                <p><strong>Solution:</strong> Used Firebase real-time listeners with intelligent subscription management and implemented connection state handling for optimal performance.</p>
+
+                <p><strong>Challenge:</strong> Managing large media files and ensuring fast loading times.</p>
+                <p><strong>Solution:</strong> Implemented image compression, lazy loading, and progressive image loading with placeholder images for better user experience.</p>
+
+                <p><strong>Challenge:</strong> Creating a scalable notification system that works across platforms.</p>
+                <p><strong>Solution:</strong> Leveraged Firebase Cloud Messaging with custom notification handling and background task management.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Architecture & Design Patterns</h2>
+                <h3>Application Architecture</h3>
+                <ul>
+                    <li><strong>Component-Based Architecture:</strong> Reusable UI components with clear separation of concerns</li>
+                    <li><strong>Flux Pattern:</strong> Unidirectional data flow using Redux</li>
+                    <li><strong>Service Layer:</strong> Abstracted API calls and business logic</li>
+                    <li><strong>Real-time Subscriptions:</strong> Efficient listener management for live data</li>
+                </ul>
+
+                <h3>Security Measures</h3>
+                <ul>
+                    <li>Firebase Security Rules for data access control</li>
+                    <li>User input validation and sanitization</li>
+                    <li>Secure image upload with file type validation</li>
+                    <li>Privacy controls for user content and profiles</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>User Experience Features</h2>
+                <ul>
+                    <li><strong>Offline Support:</strong> Cached content and offline message queuing</li>
+                    <li><strong>Dark Mode:</strong> System-responsive theme switching</li>
+                    <li><strong>Accessibility:</strong> Screen reader support and high contrast options</li>
+                    <li><strong>Gesture Navigation:</strong> Intuitive swipe gestures for common actions</li>
+                    <li><strong>Performance Optimization:</strong> Lazy loading and memory management</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Performance Metrics</h2>
+                <p>The application was optimized for performance with the following achievements:</p>
+                <ul>
+                    <li>App startup time under 3 seconds on mid-range devices</li>
+                    <li>Real-time message delivery under 500ms</li>
+                    <li>Image loading optimization with 60% size reduction</li>
+                    <li>Battery usage optimization with background task management</li>
+                    <li>Memory usage kept under 100MB during normal operation</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Stories feature with temporary content sharing</li>
+                    <li>Video calling and voice messaging</li>
+                    <li>Advanced content moderation and reporting</li>
+                    <li>Marketplace and business features</li>
+                    <li>AI-powered content recommendations</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

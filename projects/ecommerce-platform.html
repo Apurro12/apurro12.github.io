@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Platform - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #2980b9;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/3498db/ffffff?text=E-commerce+Platform" alt="E-commerce Platform" class="project-hero-image">
+                <h1>E-commerce Platform</h1>
+                <p class="subtitle">Full-featured online store with React & Node.js</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">Express</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A comprehensive e-commerce platform built with modern web technologies. This full-stack application provides a complete online shopping experience with user authentication, product management, shopping cart functionality, and secure payment processing.</p>
+
+                <p>The platform was designed with scalability and user experience in mind, featuring responsive design, real-time inventory updates, and a robust admin panel for store management.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>User Authentication</h3>
+                        <p>Secure registration and login system with JWT tokens and password encryption.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Product Catalog</h3>
+                        <p>Dynamic product listings with search, filtering, and category management.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Shopping Cart</h3>
+                        <p>Persistent cart functionality with real-time updates and quantity management.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Payment Processing</h3>
+                        <p>Secure checkout with Stripe integration for credit card payments.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Order Management</h3>
+                        <p>Complete order tracking from placement to delivery with status updates.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Admin Dashboard</h3>
+                        <p>Comprehensive admin panel for product, order, and user management.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Homepage" alt="Homepage" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Product+Page" alt="Product Page" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Shopping+Cart" alt="Shopping Cart" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Admin+Dashboard" alt="Admin Dashboard" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Frontend</h3>
+                <ul>
+                    <li><strong>React</strong> - Component-based UI with hooks and context API</li>
+                    <li><strong>Redux</strong> - State management for cart and user data</li>
+                    <li><strong>React Router</strong> - Client-side routing and navigation</li>
+                    <li><strong>Styled Components</strong> - CSS-in-JS for component styling</li>
+                </ul>
+
+                <h3>Backend</h3>
+                <ul>
+                    <li><strong>Node.js & Express</strong> - RESTful API development</li>
+                    <li><strong>MongoDB</strong> - NoSQL database for flexible data storage</li>
+                    <li><strong>Mongoose</strong> - Object modeling and validation</li>
+                    <li><strong>JWT</strong> - Secure authentication and authorization</li>
+                </ul>
+
+                <h3>Payment & Security</h3>
+                <ul>
+                    <li><strong>Stripe API</strong> - Secure payment processing</li>
+                    <li><strong>bcrypt</strong> - Password hashing and security</li>
+                    <li><strong>CORS</strong> - Cross-origin resource sharing configuration</li>
+                    <li><strong>Helmet</strong> - Security headers and protection</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Managing complex state across multiple components for cart functionality.</p>
+                <p><strong>Solution:</strong> Implemented Redux with normalized state structure and optimistic updates for better UX.</p>
+
+                <p><strong>Challenge:</strong> Ensuring secure payment processing and PCI compliance.</p>
+                <p><strong>Solution:</strong> Integrated Stripe's secure payment elements and never stored sensitive card data.</p>
+
+                <p><strong>Challenge:</strong> Optimizing performance for large product catalogs.</p>
+                <p><strong>Solution:</strong> Implemented pagination, lazy loading, and MongoDB indexing for fast queries.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Integration with multiple payment providers</li>
+                    <li>Advanced analytics dashboard</li>
+                    <li>Product recommendation engine</li>
+                    <li>Multi-language support</li>
+                    <li>Mobile app development</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

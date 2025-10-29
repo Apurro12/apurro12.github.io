@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #2ecc71;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #27ae60;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2ecc71;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/2ecc71/ffffff?text=Weather+Dashboard" alt="Weather Dashboard" class="project-hero-image">
+                <h1>Weather Dashboard</h1>
+                <p class="subtitle">Interactive weather app with location-based forecasts</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">Weather API</span>
+                    <span class="tech-tag">CSS Grid</span>
+                    <span class="tech-tag">Geolocation API</span>
+                    <span class="tech-tag">Local Storage</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A comprehensive weather dashboard application that provides real-time weather information, detailed forecasts, and interactive visualizations. The application leverages modern web APIs to deliver location-based weather data with an intuitive and responsive user interface.</p>
+
+                <p>Built with vanilla JavaScript and modern CSS techniques, this project demonstrates proficiency in working with external APIs, data visualization, and creating responsive web applications without heavy frameworks.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Current Weather</h3>
+                        <p>Real-time weather conditions with temperature, humidity, wind speed, and more.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>5-Day Forecast</h3>
+                        <p>Extended weather forecast with daily highs, lows, and conditions.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Location Detection</h3>
+                        <p>Automatic location detection using browser geolocation API.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>City Search</h3>
+                        <p>Search functionality for weather in any city worldwide.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Interactive Charts</h3>
+                        <p>Temperature and precipitation charts using Chart.js library.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Favorites</h3>
+                        <p>Save favorite locations for quick access to weather information.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Main+Dashboard" alt="Main Dashboard" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Temperature+Chart" alt="Temperature Chart" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Forecast+View" alt="Forecast View" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Mobile+View" alt="Mobile View" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Frontend Technologies</h3>
+                <ul>
+                    <li><strong>Vanilla JavaScript</strong> - ES6+ features and modern JavaScript</li>
+                    <li><strong>CSS Grid & Flexbox</strong> - Responsive layout design</li>
+                    <li><strong>Chart.js</strong> - Interactive data visualizations</li>
+                    <li><strong>CSS Animations</strong> - Smooth transitions and loading states</li>
+                </ul>
+
+                <h3>APIs & Data Sources</h3>
+                <ul>
+                    <li><strong>OpenWeatherMap API</strong> - Weather data and forecasts</li>
+                    <li><strong>Geolocation API</strong> - Browser-based location detection</li>
+                    <li><strong>Geocoding API</strong> - Location search and coordinates</li>
+                </ul>
+
+                <h3>Data Management</h3>
+                <ul>
+                    <li><strong>Local Storage</strong> - Persistent user preferences and favorites</li>
+                    <li><strong>Caching Strategy</strong> - Efficient API usage with data caching</li>
+                    <li><strong>Error Handling</strong> - Graceful handling of API failures and network issues</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Managing API rate limits while providing real-time weather updates.</p>
+                <p><strong>Solution:</strong> Implemented intelligent caching system with time-based refresh intervals and user-triggered updates only when necessary.</p>
+
+                <p><strong>Challenge:</strong> Creating responsive charts that work well across different screen sizes.</p>
+                <p><strong>Solution:</strong> Used Chart.js responsive configuration with custom breakpoints and dynamically adjusted chart dimensions based on container size.</p>
+
+                <p><strong>Challenge:</strong> Handling location permissions and fallback scenarios.</p>
+                <p><strong>Solution:</strong> Implemented progressive enhancement with manual location search as fallback when geolocation is denied or unavailable.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>User Experience Design</h2>
+                <p>The application prioritizes user experience with:</p>
+                <ul>
+                    <li><strong>Intuitive Interface:</strong> Clean, card-based layout with clear information hierarchy</li>
+                    <li><strong>Loading States:</strong> Skeleton screens and loading indicators for better perceived performance</li>
+                    <li><strong>Error States:</strong> Friendly error messages with suggested actions</li>
+                    <li><strong>Accessibility:</strong> Keyboard navigation and screen reader support</li>
+                    <li><strong>Mobile-First:</strong> Responsive design optimized for mobile devices</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Performance Optimizations</h2>
+                <ul>
+                    <li>Lazy loading of weather icons and background images</li>
+                    <li>Debounced search input to reduce API calls</li>
+                    <li>Compressed and optimized image assets</li>
+                    <li>Efficient DOM manipulation techniques</li>
+                    <li>Service worker implementation for offline capability</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Weather alerts and notifications</li>
+                    <li>Historical weather data visualization</li>
+                    <li>Weather radar integration</li>
+                    <li>Dark mode theme option</li>
+                    <li>Progressive Web App (PWA) features</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #9b59b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #8e44ad;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #9b59b6;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/9b59b6/ffffff?text=Task+Management+App" alt="Task Management App" class="project-hero-image">
+                <h1>Task Management App</h1>
+                <p class="subtitle">Collaborative task management with real-time updates</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Vuex</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A modern task management application designed for teams and individuals to organize, track, and collaborate on projects efficiently. Built with Vue.js and real-time capabilities, this application provides seamless collaboration features with instant updates across all connected users.</p>
+
+                <p>The application focuses on user experience with intuitive drag-and-drop functionality, customizable workflows, and comprehensive project tracking capabilities.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Real-time Collaboration</h3>
+                        <p>Instant updates using Socket.io for seamless team collaboration.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Kanban Boards</h3>
+                        <p>Visual project management with customizable columns and drag-and-drop.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Team Management</h3>
+                        <p>User roles, permissions, and team member invitation system.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Task Tracking</h3>
+                        <p>Detailed task information with due dates, priorities, and assignments.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Progress Analytics</h3>
+                        <p>Visual charts and reports to track project progress and team productivity.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>File Attachments</h3>
+                        <p>Upload and manage files associated with tasks and projects.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Dashboard" alt="Dashboard" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Kanban+Board" alt="Kanban Board" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Task+Details" alt="Task Details" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Analytics" alt="Analytics" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Frontend</h3>
+                <ul>
+                    <li><strong>Vue.js 3</strong> - Reactive UI with Composition API</li>
+                    <li><strong>Vuex</strong> - Centralized state management</li>
+                    <li><strong>Vue Router</strong> - Single-page application routing</li>
+                    <li><strong>Vuetify</strong> - Material Design component framework</li>
+                    <li><strong>Chart.js</strong> - Interactive charts and analytics</li>
+                </ul>
+
+                <h3>Backend</h3>
+                <ul>
+                    <li><strong>Node.js & Express</strong> - Server-side application framework</li>
+                    <li><strong>PostgreSQL</strong> - Relational database for complex queries</li>
+                    <li><strong>Sequelize</strong> - ORM for database operations</li>
+                    <li><strong>Socket.io</strong> - Real-time bidirectional communication</li>
+                </ul>
+
+                <h3>Real-time Features</h3>
+                <ul>
+                    <li><strong>WebSocket Connections</strong> - Persistent real-time connections</li>
+                    <li><strong>Event Broadcasting</strong> - Efficient message distribution</li>
+                    <li><strong>Optimistic Updates</strong> - Immediate UI feedback</li>
+                    <li><strong>Conflict Resolution</strong> - Handling concurrent edits</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Managing real-time updates without conflicts when multiple users edit simultaneously.</p>
+                <p><strong>Solution:</strong> Implemented operational transformation principles and last-write-wins conflict resolution with user notifications.</p>
+
+                <p><strong>Challenge:</strong> Optimizing performance with large datasets and many concurrent users.</p>
+                <p><strong>Solution:</strong> Added database indexing, implemented pagination, and used room-based Socket.io connections to limit broadcast scope.</p>
+
+                <p><strong>Challenge:</strong> Creating intuitive drag-and-drop functionality across different screen sizes.</p>
+                <p><strong>Solution:</strong> Used Vue.Draggable with touch support and implemented responsive design patterns for mobile devices.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Project Architecture</h2>
+                <p>The application follows a modern three-tier architecture:</p>
+                <ul>
+                    <li><strong>Presentation Layer:</strong> Vue.js SPA with responsive design</li>
+                    <li><strong>Business Logic Layer:</strong> Express.js API with authentication and authorization</li>
+                    <li><strong>Data Layer:</strong> PostgreSQL with optimized queries and indexing</li>
+                </ul>
+
+                <p>Real-time functionality is implemented using WebSocket connections alongside traditional REST API endpoints for different use cases.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Mobile application for iOS and Android</li>
+                    <li>Advanced automation and workflow rules</li>
+                    <li>Integration with popular tools (Slack, GitHub, etc.)</li>
+                    <li>Time tracking and reporting features</li>
+                    <li>Advanced search and filtering capabilities</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

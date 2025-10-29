@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #16a085;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #1abc9c;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/1abc9c/ffffff?text=Cross-Platform+Mobile+App" alt="Mobile App" class="project-hero-image">
+                <h1>Mobile App</h1>
+                <p class="subtitle">Cross-platform mobile app with Flutter</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Dart</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">Provider</span>
+                    <span class="tech-tag">Material Design</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A comprehensive cross-platform mobile application built with Flutter, designed to provide native performance and user experience across both iOS and Android devices. The app combines modern UI design with robust functionality, demonstrating expertise in mobile development and cross-platform technologies.</p>
+
+                <p>This project showcases the power of Flutter for creating high-performance mobile applications with a single codebase, while maintaining platform-specific design guidelines and user experience standards.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Cross-Platform</h3>
+                        <p>Single codebase running natively on both iOS and Android platforms.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Offline Support</h3>
+                        <p>Local database storage with synchronization when connectivity returns.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Real-time Updates</h3>
+                        <p>Live data synchronization with backend services and push notifications.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Material Design</h3>
+                        <p>Modern UI following Google's Material Design guidelines.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Performance Optimized</h3>
+                        <p>60fps animations and efficient memory management for smooth operation.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Secure Authentication</h3>
+                        <p>Biometric authentication and secure token-based user sessions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/1abc9c/ffffff?text=Home+Screen" alt="Home Screen" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=User+Profile" alt="User Profile" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Data+View" alt="Data View" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Settings" alt="Settings" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Mobile Development</h3>
+                <ul>
+                    <li><strong>Flutter Framework</strong> - Google's UI toolkit for cross-platform development</li>
+                    <li><strong>Dart Language</strong> - Object-oriented programming with strong typing</li>
+                    <li><strong>Material Design</strong> - Consistent and intuitive user interface</li>
+                    <li><strong>Cupertino Widgets</strong> - iOS-style widgets for platform-specific design</li>
+                </ul>
+
+                <h3>State Management</h3>
+                <ul>
+                    <li><strong>Provider Pattern</strong> - Efficient state management and dependency injection</li>
+                    <li><strong>ChangeNotifier</strong> - Reactive programming for UI updates</li>
+                    <li><strong>Consumer Widgets</strong> - Optimized rebuilds for better performance</li>
+                </ul>
+
+                <h3>Data & Storage</h3>
+                <ul>
+                    <li><strong>SQLite Database</strong> - Local data persistence with complex queries</li>
+                    <li><strong>Shared Preferences</strong> - Simple key-value storage for settings</li>
+                    <li><strong>File Storage</strong> - Local file management and caching</li>
+                    <li><strong>REST API Integration</strong> - HTTP client for backend communication</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Architecture & Design Patterns</h2>
+                <h3>Clean Architecture</h3>
+                <p>The application follows clean architecture principles with clear separation of concerns:</p>
+                <ul>
+                    <li><strong>Presentation Layer:</strong> UI widgets and state management</li>
+                    <li><strong>Domain Layer:</strong> Business logic and use cases</li>
+                    <li><strong>Data Layer:</strong> Repository pattern with local and remote data sources</li>
+                </ul>
+
+                <h3>Design Patterns</h3>
+                <ul>
+                    <li><strong>Repository Pattern:</strong> Abstraction layer for data sources</li>
+                    <li><strong>Factory Pattern:</strong> Object creation and dependency injection</li>
+                    <li><strong>Observer Pattern:</strong> State changes and UI updates</li>
+                    <li><strong>Singleton Pattern:</strong> Shared services and configuration</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Ensuring consistent performance across different device specifications and operating systems.</p>
+                <p><strong>Solution:</strong> Implemented performance monitoring, optimized widget rebuilds, and used Flutter's built-in profiling tools to identify and resolve bottlenecks.</p>
+
+                <p><strong>Challenge:</strong> Managing complex state across multiple screens and maintaining data consistency.</p>
+                <p><strong>Solution:</strong> Adopted Provider pattern with well-structured models and implemented proper state lifting to parent widgets where needed.</p>
+
+                <p><strong>Challenge:</strong> Handling offline scenarios and data synchronization when connectivity returns.</p>
+                <p><strong>Solution:</strong> Implemented a robust caching strategy with conflict resolution and background synchronization using connectivity monitoring.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Platform-Specific Features</h2>
+                <h3>iOS Integration</h3>
+                <ul>
+                    <li>Cupertino design widgets for native iOS look and feel</li>
+                    <li>iOS-specific navigation patterns and transitions</li>
+                    <li>Integration with iOS keychain for secure storage</li>
+                    <li>Support for iOS dark mode and accessibility features</li>
+                </ul>
+
+                <h3>Android Integration</h3>
+                <ul>
+                    <li>Material Design components and animations</li>
+                    <li>Android-specific back button handling</li>
+                    <li>Integration with Android biometric authentication</li>
+                    <li>Support for Android adaptive icons and notification channels</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Performance Optimizations</h2>
+                <ul>
+                    <li><strong>Widget Optimization:</strong> Efficient widget rebuilds with const constructors</li>
+                    <li><strong>Image Caching:</strong> Intelligent image loading and caching strategy</li>
+                    <li><strong>Lazy Loading:</strong> On-demand loading of expensive operations</li>
+                    <li><strong>Memory Management:</strong> Proper disposal of resources and controllers</li>
+                    <li><strong>Network Optimization:</strong> Request debouncing and intelligent retry logic</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Testing Strategy</h2>
+                <p>Comprehensive testing approach ensuring reliability and maintainability:</p>
+                <ul>
+                    <li><strong>Unit Tests:</strong> Business logic and utility function testing</li>
+                    <li><strong>Widget Tests:</strong> UI component testing and user interaction</li>
+                    <li><strong>Integration Tests:</strong> End-to-end feature testing</li>
+                    <li><strong>Golden Tests:</strong> Visual regression testing for UI consistency</li>
+                    <li><strong>Performance Tests:</strong> Memory usage and execution time monitoring</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Security Features</h2>
+                <ul>
+                    <li>Biometric authentication (fingerprint, face recognition)</li>
+                    <li>Secure token storage using platform keychain</li>
+                    <li>Certificate pinning for API communications</li>
+                    <li>Data encryption for sensitive information</li>
+                    <li>Root/jailbreak detection for enhanced security</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Integration with wearable devices (Apple Watch, Wear OS)</li>
+                    <li>Machine learning features for personalized experiences</li>
+                    <li>Advanced analytics and user behavior tracking</li>
+                    <li>Multi-language support and localization</li>
+                    <li>Enhanced accessibility features and voice control</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

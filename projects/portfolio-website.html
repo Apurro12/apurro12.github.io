@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #d35400;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #e67e22;
+        }
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .screenshot {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://via.placeholder.com/800x400/e67e22/ffffff?text=Portfolio+Website" alt="Portfolio Website" class="project-hero-image">
+                <h1>Portfolio Website</h1>
+                <p class="subtitle">Responsive portfolio with modern design</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GitHub Pages</span>
+                    <span class="tech-tag">Responsive Design</span>
+                    <span class="tech-tag">CSS Grid</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="#" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A modern, responsive portfolio website designed to showcase projects, skills, and professional experience. Built with clean HTML, CSS, and JavaScript, this website demonstrates proficiency in front-end development while maintaining excellent performance and accessibility standards.</p>
+
+                <p>The website features a clean, professional design inspired by modern portfolio trends, with a focus on readability, user experience, and mobile-first responsive design principles.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach ensuring optimal viewing on all devices.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Modern Layout</h3>
+                        <p>Clean, professional design with intuitive navigation and structure.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Project Showcase</h3>
+                        <p>Individual project pages with detailed descriptions and technical details.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Interactive Elements</h3>
+                        <p>Smooth animations and hover effects for enhanced user experience.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Performance Optimized</h3>
+                        <p>Fast loading times with optimized images and efficient code.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>SEO Friendly</h3>
+                        <p>Semantic HTML and meta tags for better search engine visibility.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="https://via.placeholder.com/400x250/e67e22/ffffff?text=Homepage" alt="Homepage" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/3498db/ffffff?text=Projects+Grid" alt="Projects Grid" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/2ecc71/ffffff?text=Mobile+View" alt="Mobile View" class="screenshot">
+                    <img src="https://via.placeholder.com/400x250/9b59b6/ffffff?text=Contact+Section" alt="Contact Section" class="screenshot">
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Frontend Technologies</h3>
+                <ul>
+                    <li><strong>HTML5</strong> - Semantic markup and modern HTML features</li>
+                    <li><strong>CSS3</strong> - Advanced styling with Grid, Flexbox, and animations</li>
+                    <li><strong>JavaScript ES6+</strong> - Modern JavaScript features and DOM manipulation</li>
+                    <li><strong>Font Awesome</strong> - Icon library for consistent iconography</li>
+                    <li><strong>Google Fonts</strong> - Typography with Inter font family</li>
+                </ul>
+
+                <h3>Design Techniques</h3>
+                <ul>
+                    <li><strong>CSS Grid & Flexbox</strong> - Modern layout techniques for responsive design</li>
+                    <li><strong>CSS Custom Properties</strong> - Maintainable styling with CSS variables</li>
+                    <li><strong>Mobile-First Design</strong> - Progressive enhancement for larger screens</li>
+                    <li><strong>Smooth Animations</strong> - CSS transitions and keyframe animations</li>
+                </ul>
+
+                <h3>Performance & Optimization</h3>
+                <ul>
+                    <li><strong>Optimized Images</strong> - Compressed images and appropriate formats</li>
+                    <li><strong>Minified Code</strong> - Compressed CSS and JavaScript for faster loading</li>
+                    <li><strong>Efficient DOM Queries</strong> - Optimized JavaScript for better performance</li>
+                    <li><strong>Lazy Loading</strong> - Progressive image loading for improved initial load time</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Design Process</h2>
+                <h3>Planning & Research</h3>
+                <p>The design process began with research into modern portfolio trends and user experience best practices. Key considerations included:</p>
+                <ul>
+                    <li>User journey mapping for potential employers and clients</li>
+                    <li>Content hierarchy and information architecture</li>
+                    <li>Competitive analysis of successful developer portfolios</li>
+                    <li>Accessibility and usability requirements</li>
+                </ul>
+
+                <h3>Visual Design</h3>
+                <p>The visual design emphasizes:</p>
+                <ul>
+                    <li><strong>Typography:</strong> Clean, readable fonts with appropriate hierarchy</li>
+                    <li><strong>Color Palette:</strong> Professional color scheme with accent colors for highlights</li>
+                    <li><strong>White Space:</strong> Generous spacing for improved readability</li>
+                    <li><strong>Visual Consistency:</strong> Consistent styling throughout all pages</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Creating a design that stands out while maintaining professionalism.</p>
+                <p><strong>Solution:</strong> Balanced modern design trends with classic professional aesthetics, using subtle animations and clean typography.</p>
+
+                <p><strong>Challenge:</strong> Ensuring fast loading times without sacrificing visual appeal.</p>
+                <p><strong>Solution:</strong> Implemented image optimization, efficient CSS, and minimal JavaScript while maintaining rich visual elements.</p>
+
+                <p><strong>Challenge:</strong> Making the site accessible across different devices and abilities.</p>
+                <p><strong>Solution:</strong> Used semantic HTML, proper ARIA labels, keyboard navigation support, and responsive design principles.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Accessibility Features</h2>
+                <ul>
+                    <li><strong>Semantic HTML:</strong> Proper heading hierarchy and landmark elements</li>
+                    <li><strong>Keyboard Navigation:</strong> Full keyboard accessibility for all interactive elements</li>
+                    <li><strong>Screen Reader Support:</strong> ARIA labels and descriptive alt text</li>
+                    <li><strong>Color Contrast:</strong> WCAG AA compliant color combinations</li>
+                    <li><strong>Focus Indicators:</strong> Clear visual focus states for navigation</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Performance Metrics</h2>
+                <p>The website achieves excellent performance scores:</p>
+                <ul>
+                    <li>Google PageSpeed Insights: 95+ score</li>
+                    <li>First Contentful Paint: Under 1.5 seconds</li>
+                    <li>Time to Interactive: Under 2 seconds</li>
+                    <li>Cumulative Layout Shift: Minimal layout shifts</li>
+                    <li>Mobile-friendly: 100% mobile usability score</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Dark mode theme toggle</li>
+                    <li>Blog section with technical articles</li>
+                    <li>Contact form with backend integration</li>
+                    <li>Progressive Web App (PWA) features</li>
+                    <li>Internationalization for multiple languages</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
