@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/150x150/4a90e2/ffffff?text=Profile" alt="Profile Photo" class="profile-photo">
+                <h1 class="name">Your Name</h1>
+                <p class="subtitle">Full Stack Developer, Your City</p>
+                <a href="#" class="resume-link">
+                    <i class="fas fa-download"></i>
+                    Resume
+                </a>
+            </div>
+        </header>
+
+        <hr class="section-divider">
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Passionate full stack developer with experience in modern web technologies. I enjoy creating efficient, scalable solutions and learning new technologies. Always eager to tackle challenging problems and collaborate with talented teams.</p>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <div class="company-logo">
+                    <img src="https://via.placeholder.com/60x60/34495e/ffffff?text=Co" alt="Company Logo">
+                </div>
+                <div class="experience-content">
+                    <h3>Senior Developer</h3>
+                    <p class="company-name">Tech Company • 2022 - Present</p>
+                    <ul>
+                        <li>Led development of scalable web applications</li>
+                        <li>Implemented CI/CD pipelines improving deployment efficiency by 40%</li>
+                        <li>Mentored junior developers and conducted code reviews</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-logo">
+                    <img src="https://via.placeholder.com/60x60/e74c3c/ffffff?text=St" alt="Startup Logo">
+                </div>
+                <div class="experience-content">
+                    <h3>Full Stack Developer</h3>
+                    <p class="company-name">Startup Inc • 2020 - 2022</p>
+                    <ul>
+                        <li>Built responsive web applications from scratch</li>
+                        <li>Designed and implemented RESTful APIs</li>
+                        <li>Collaborated with designers to create intuitive user interfaces</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item" onclick="openModal('project1')">
+                    <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Project+1" alt="Project 1">
+                    <div class="project-overlay">
+                        <h3>E-commerce Platform</h3>
+                    </div>
+                </div>
+                <div class="project-item" onclick="openModal('project2')">
+                    <img src="https://via.placeholder.com/300x200/9b59b6/ffffff?text=Project+2" alt="Project 2">
+                    <div class="project-overlay">
+                        <h3>Task Management App</h3>
+                    </div>
+                </div>
+                <div class="project-item" onclick="openModal('project3')">
+                    <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Project+3" alt="Project 3">
+                    <div class="project-overlay">
+                        <h3>Weather Dashboard</h3>
+                    </div>
+                </div>
+                <div class="project-item" onclick="openModal('project4')">
+                    <img src="https://via.placeholder.com/300x200/f39c12/ffffff?text=Project+4" alt="Project 4">
+                    <div class="project-overlay">
+                        <h3>Social Media App</h3>
+                    </div>
+                </div>
+                <div class="project-item" onclick="openModal('project5')">
+                    <img src="https://via.placeholder.com/300x200/e67e22/ffffff?text=Project+5" alt="Project 5">
+                    <div class="project-overlay">
+                        <h3>Portfolio Website</h3>
+                    </div>
+                </div>
+                <div class="project-item" onclick="openModal('project6')">
+                    <img src="https://via.placeholder.com/300x200/1abc9c/ffffff?text=Project+6" alt="Project 6">
+                    <div class="project-overlay">
+                        <h3>Mobile App</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education & Training</h2>
+
+            <div class="education-item">
+                <h3>Computer Science Degree</h3>
+                <p class="institution">University Name • 2016 - 2020</p>
+                <ul>
+                    <li>Graduated with honors</li>
+                    <li>Specialized in software engineering and algorithms</li>
+                    <li>Led university coding club</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <h3>Full Stack Web Development Bootcamp</h3>
+                <p class="institution">Coding Bootcamp • 2020</p>
+                <ul>
+                    <li>Intensive 12-week program</li>
+                    <li>Built 5+ full-stack applications</li>
+                    <li>Learned modern development practices</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://yourwebsite.com" target="_blank" class="contact-link">
+                    <i class="fas fa-globe"></i>
+                    Website
+                </a>
+                <a href="mailto:your.email@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h3>E-commerce Platform</h3>
+            <img src="https://via.placeholder.com/600x400/3498db/ffffff?text=E-commerce+Platform" alt="Project Screenshot">
+            <p>A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h3>Task Management App</h3>
+            <img src="https://via.placeholder.com/600x400/9b59b6/ffffff?text=Task+Management" alt="Project Screenshot">
+            <p>A collaborative task management application with real-time updates, team features, and progress tracking.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h3>Weather Dashboard</h3>
+            <img src="https://via.placeholder.com/600x400/2ecc71/ffffff?text=Weather+Dashboard" alt="Project Screenshot">
+            <p>A responsive weather dashboard with location-based forecasts, interactive maps, and historical data visualization.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Weather API</span>
+                <span class="tech-tag">CSS Grid</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h3>Social Media App</h3>
+            <img src="https://via.placeholder.com/600x400/f39c12/ffffff?text=Social+Media" alt="Project Screenshot">
+            <p>A social media platform with user profiles, posts, comments, real-time messaging, and content sharing features.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Cloud Storage</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project5')">&times;</span>
+            <h3>Portfolio Website</h3>
+            <img src="https://via.placeholder.com/600x400/e67e22/ffffff?text=Portfolio" alt="Project Screenshot">
+            <p>A responsive portfolio website showcasing projects, skills, and experience with smooth animations and modern design.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GitHub Pages</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project6')">&times;</span>
+            <h3>Mobile App</h3>
+            <img src="https://via.placeholder.com/600x400/1abc9c/ffffff?text=Mobile+App" alt="Project Screenshot">
+            <p>A cross-platform mobile application with native performance, offline capabilities, and seamless user experience.</p>
+            <div class="tech-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">REST API</span>
+            </div>
+            <div class="project-links">
+                <a href="#" target="_blank">Live Demo</a>
+                <a href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
