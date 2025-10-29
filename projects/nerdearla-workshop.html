@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NerdearLA AI Workshop - Camilo Leonel Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #c0392b;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+        .workshop-modules {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .module-item {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 6px;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=400&fit=crop&crop=center" alt="NerdearLA AI Workshop" class="project-hero-image">
+                <h1>NerdearLA AI Workshop</h1>
+                <p class="subtitle">LangChain & LangGraph Workshop for AI Agent Development</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">LangGraph</span>
+                    <span class="tech-tag">MCP</span>
+                    <span class="tech-tag">Gradio</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="https://github.com/Apurro12/Nerdearla" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        Workshop Recording
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Workshop Overview</h2>
+                <p>A comprehensive workshop presented at NerdearLA 2025, demonstrating the evolution of AI agent workflows using cutting-edge technologies. This hands-on session guided developers through building sophisticated, modular AI agent systems from basic responses to advanced multi-server deployments.</p>
+
+                <p>The workshop showcased practical implementation of modern AI development patterns, emphasizing scalability, modularity, and real-world application scenarios.</p>
+
+                <div style="background-color: #e8f5e8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid #27ae60;">
+                    <h3 style="margin-top: 0; color: #27ae60;">Workshop Details</h3>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>Event:</strong> NerdearLA 2025</li>
+                        <li><strong>Date:</strong> March 23, 2025</li>
+                        <li><strong>Duration:</strong> 1 hour 10 minutes</li>
+                        <li><strong>Format:</strong> Live coding demonstration</li>
+                        <li><strong>Audience:</strong> AI developers and enthusiasts</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Progressive Learning</h3>
+                        <p>7 modules progressing from basic AI responses to advanced agent workflows.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Live Coding</h3>
+                        <p>Real-time development demonstrations with practical examples.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Modern Technologies</h3>
+                        <p>Cutting-edge AI frameworks including LangChain, LangGraph, and MCP.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Practical Examples</h3>
+                        <p>Real-world scenarios using SQLite database and interactive interfaces.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Modular Design</h3>
+                        <p>Emphasis on building scalable, maintainable AI agent architectures.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Industry Relevance</h3>
+                        <p>Focus on patterns and practices applicable in production environments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Workshop Modules</h2>
+                <div class="workshop-modules">
+                    <h3>Progressive AI Agent Development Journey</h3>
+
+                    <div class="module-item">
+                        <h4>Module 1: Foundation</h4>
+                        <p><strong>Simple AI Responses</strong> - Basic interaction patterns and response generation</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 2: Agent Patterns</h4>
+                        <p><strong>ReAct Agent Implementation</strong> - Reasoning and Acting frameworks for intelligent agents</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 3: Architecture</h4>
+                        <p><strong>MCP Server Architecture</strong> - Model Context Protocol for scalable AI systems</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 4: Workflows</h4>
+                        <p><strong>Custom LangGraph Workflows</strong> - Building complex agent interaction patterns</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 5: User Experience</h4>
+                        <p><strong>Interactive Permission Systems</strong> - Human-in-the-loop agent controls</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 6: Integration</h4>
+                        <p><strong>Tool Integration Techniques</strong> - Connecting agents with external services</p>
+                    </div>
+
+                    <div class="module-item">
+                        <h4>Module 7: Deployment</h4>
+                        <p><strong>Multi-Server Deployment</strong> - Scaling AI agents across distributed systems</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Core Technologies</h3>
+                <ul>
+                    <li><strong>LangChain</strong> - Framework for developing applications with large language models</li>
+                    <li><strong>LangGraph</strong> - Library for building stateful, multi-actor applications with LLMs</li>
+                    <li><strong>Model Context Protocol (MCP)</strong> - Standardized protocol for AI model interactions</li>
+                    <li><strong>Gradio</strong> - Interactive machine learning interface for demonstrations</li>
+                    <li><strong>SQLite</strong> - Lightweight database for practical examples and data persistence</li>
+                </ul>
+
+                <h3>Advanced Concepts Covered</h3>
+                <ul>
+                    <li><strong>State Management:</strong> Handling complex agent states across interactions</li>
+                    <li><strong>Tool Integration:</strong> Connecting AI agents with external APIs and services</li>
+                    <li><strong>Permission Systems:</strong> Implementing human oversight and approval workflows</li>
+                    <li><strong>Multi-Agent Coordination:</strong> Orchestrating multiple AI agents working together</li>
+                    <li><strong>Scalable Architecture:</strong> Designing systems that grow with demand</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Learning Outcomes</h2>
+                <p>Participants gained hands-on experience in:</p>
+                <ul>
+                    <li><strong>AI Agent Design Patterns:</strong> Understanding when and how to apply different agent architectures</li>
+                    <li><strong>Modern AI Frameworks:</strong> Practical experience with LangChain and LangGraph</li>
+                    <li><strong>Production Considerations:</strong> Scaling, monitoring, and maintaining AI systems</li>
+                    <li><strong>User Experience Design:</strong> Creating intuitive interfaces for AI interactions</li>
+                    <li><strong>System Integration:</strong> Connecting AI agents with existing infrastructure</li>
+                    <li><strong>Best Practices:</strong> Industry standards for AI agent development</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Practical Examples</h2>
+                <h3>SQLite Integration Demo</h3>
+                <p>The workshop included practical demonstrations of AI agents interacting with real databases, showing how to:</p>
+                <ul>
+                    <li>Query databases using natural language</li>
+                    <li>Validate and sanitize user inputs</li>
+                    <li>Handle complex data relationships</li>
+                    <li>Provide meaningful error messages and guidance</li>
+                </ul>
+
+                <h3>Interactive User Interfaces</h3>
+                <p>Gradio-based demonstrations showed how to create user-friendly interfaces that:</p>
+                <ul>
+                    <li>Provide real-time feedback during agent processing</li>
+                    <li>Allow users to control agent behavior and permissions</li>
+                    <li>Display intermediate steps for transparency</li>
+                    <li>Handle errors gracefully with clear messaging</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Workshop Impact</h2>
+                <p>This workshop contributed to the AI development community by:</p>
+                <ul>
+                    <li><strong>Knowledge Sharing:</strong> Disseminating advanced AI agent development techniques</li>
+                    <li><strong>Practical Learning:</strong> Providing hands-on experience with cutting-edge tools</li>
+                    <li><strong>Community Building:</strong> Connecting AI developers and fostering collaboration</li>
+                    <li><strong>Industry Advancement:</strong> Promoting best practices in AI agent development</li>
+                    <li><strong>Open Source:</strong> Making all workshop materials freely available on GitHub</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Applications</h2>
+                <p>The concepts and patterns demonstrated in this workshop can be applied to:</p>
+                <ul>
+                    <li>Customer service automation with human oversight</li>
+                    <li>Data analysis and reporting systems</li>
+                    <li>Content creation and curation platforms</li>
+                    <li>Educational and training applications</li>
+                    <li>Research and development tools</li>
+                    <li>Business process automation</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

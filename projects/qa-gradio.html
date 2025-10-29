@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Gradio RAG System - Camilo Leonel Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .project-hero-image {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .back-nav {
+            margin-bottom: 2rem;
+        }
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .back-nav a:hover {
+            color: #2980b9;
+        }
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 2.5rem;
+        }
+        .project-links-section {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .project-links-section a {
+            padding: 0.75rem 1.5rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        .project-links-section a:hover {
+            background-color: #2980b9;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .feature-item {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .architecture-diagram {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </nav>
+
+        <div class="project-content">
+            <header class="project-header">
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&crop=center" alt="QA Gradio RAG System" class="project-hero-image">
+                <h1>QA Gradio RAG System</h1>
+                <p class="subtitle">Production-ready Retrieval-Augmented Generation system with interactive web interface</p>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">Python 3.12+</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Gradio</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Clean Architecture</span>
+                    <span class="tech-tag">100% Test Coverage</span>
+                </div>
+
+                <div class="project-links-section">
+                    <a href="https://github.com/Apurro12/QA_gradio" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub Repository
+                    </a>
+                </div>
+            </header>
+
+            <section class="project-section">
+                <h2>Project Overview</h2>
+                <p>A sophisticated Retrieval-Augmented Generation (RAG) system designed for production environments. This project demonstrates advanced AI engineering practices by combining conversational AI capabilities with robust document retrieval, all wrapped in an intuitive Gradio web interface.</p>
+
+                <p>The system implements Clean Architecture principles, ensuring maintainability, testability, and scalability. With 100% test coverage and comprehensive CI/CD pipelines, this project showcases enterprise-level development standards.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Key Features</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Dual Operation Modes</h3>
+                        <p>Supports both online and offline document retrieval strategies for flexible deployment scenarios.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Clean Architecture</h3>
+                        <p>Implements layered architecture with clear separation of Domain, Use Cases, Infrastructure, and Interfaces.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Conversational AI</h3>
+                        <p>Stateful interactions with context preservation across multiple conversation turns.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Interactive Web Interface</h3>
+                        <p>User-friendly Gradio interface for easy interaction with the AI system.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>100% Test Coverage</h3>
+                        <p>Comprehensive testing suite ensuring reliability and maintainability.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Multi-Model Support</h3>
+                        <p>Configurable support for GPT-4 and GPT-3.5-turbo models with easy switching.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Architecture</h2>
+                <div class="architecture-diagram">
+                    <h3>Clean Architecture Layers</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div style="background: #3498db; color: white; padding: 1rem; border-radius: 8px;">
+                            <strong>Interfaces</strong><br>
+                            Gradio UI<br>
+                            REST API
+                        </div>
+                        <div style="background: #2ecc71; color: white; padding: 1rem; border-radius: 8px;">
+                            <strong>Use Cases</strong><br>
+                            Question Processing<br>
+                            Document Retrieval
+                        </div>
+                        <div style="background: #e74c3c; color: white; padding: 1rem; border-radius: 8px;">
+                            <strong>Domain</strong><br>
+                            Business Logic<br>
+                            Core Entities
+                        </div>
+                        <div style="background: #9b59b6; color: white; padding: 1rem; border-radius: 8px;">
+                            <strong>Infrastructure</strong><br>
+                            LangChain<br>
+                            OpenAI API
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <h2>Technical Implementation</h2>
+                <h3>Core Technologies</h3>
+                <ul>
+                    <li><strong>Python 3.12+</strong> - Modern Python with latest features and performance improvements</li>
+                    <li><strong>LangChain</strong> - Framework for developing applications with large language models</li>
+                    <li><strong>Gradio</strong> - Fast way to demo machine learning models with a friendly web interface</li>
+                    <li><strong>OpenAI API</strong> - Integration with GPT-4 and GPT-3.5-turbo models</li>
+                </ul>
+
+                <h3>Development Tools & Practices</h3>
+                <ul>
+                    <li><strong>uv Package Manager</strong> - Ultra-fast Python package installer and resolver</li>
+                    <li><strong>Pytest</strong> - Comprehensive testing framework with 100% coverage requirement</li>
+                    <li><strong>Ruff</strong> - Extremely fast Python linter and code formatter</li>
+                    <li><strong>MyPy</strong> - Static type checking for enhanced code reliability</li>
+                    <li><strong>GitHub Actions</strong> - Automated CI/CD pipeline for testing and deployment</li>
+                </ul>
+
+                <h3>Design Patterns</h3>
+                <ul>
+                    <li><strong>Strategy Pattern</strong> - Interchangeable document retrieval strategies</li>
+                    <li><strong>Dependency Injection</strong> - Loose coupling between components</li>
+                    <li><strong>Repository Pattern</strong> - Abstraction layer for data access</li>
+                    <li><strong>Factory Pattern</strong> - Creation of complex objects with multiple configurations</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Unique Features</h2>
+                <h3>Dual Retrieval Strategies</h3>
+                <p><strong>Online Mode:</strong> AI-powered document selection using language models to intelligently choose relevant documents based on query context.</p>
+                <p><strong>Offline Mode:</strong> Exact matching algorithms for scenarios requiring deterministic retrieval without external API calls.</p>
+
+                <h3>Modular Design</h3>
+                <p>The system's modular architecture allows for easy extension and modification. New retrieval strategies, AI models, or user interfaces can be added without affecting existing functionality.</p>
+
+                <h3>Comprehensive Testing</h3>
+                <p>Every component is thoroughly tested with unit tests, integration tests, and end-to-end scenarios, ensuring reliability in production environments.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Development Workflow</h2>
+                <ul>
+                    <li><strong>Modern Package Management:</strong> Uses uv for ultra-fast dependency resolution and installation</li>
+                    <li><strong>Strict Type Checking:</strong> MyPy ensures type safety throughout the codebase</li>
+                    <li><strong>Quality Assurance:</strong> Automated linting, formatting, and testing on every commit</li>
+                    <li><strong>Continuous Integration:</strong> GitHub Actions pipeline runs tests across multiple Python versions</li>
+                    <li><strong>Code Coverage:</strong> Maintains 100% test coverage requirement for all new code</li>
+                </ul>
+            </section>
+
+            <section class="project-section">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Challenge:</strong> Balancing response accuracy with system performance in production environments.</p>
+                <p><strong>Solution:</strong> Implemented dual-mode retrieval system allowing users to choose between accuracy (online) and speed (offline) based on their specific needs.</p>
+
+                <p><strong>Challenge:</strong> Maintaining conversation context across multiple interactions while managing memory efficiently.</p>
+                <p><strong>Solution:</strong> Developed stateful conversation management with intelligent context truncation to maintain relevance while controlling token usage.</p>
+
+                <p><strong>Challenge:</strong> Ensuring code quality and reliability in a rapidly evolving AI/ML landscape.</p>
+                <p><strong>Solution:</strong> Implemented comprehensive testing strategy with 100% coverage requirement and automated quality checks in CI/CD pipeline.</p>
+            </section>
+
+            <section class="project-section">
+                <h2>Future Enhancements</h2>
+                <ul>
+                    <li>Integration with additional LLM providers (Anthropic Claude, Google Gemini)</li>
+                    <li>Advanced vector database support for semantic search</li>
+                    <li>Multi-modal document processing (images, audio, video)</li>
+                    <li>Real-time collaboration features for multiple users</li>
+                    <li>Advanced analytics and usage monitoring dashboard</li>
+                    <li>Docker containerization for simplified deployment</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
